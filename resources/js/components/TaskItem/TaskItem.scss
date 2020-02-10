@@ -1,0 +1,73 @@
+.TaskItem {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+	&:last-child {
+		border-bottom: 1px solid #E6E6E6;
+	}
+	&>div {
+		padding: 1rem 1.4rem;
+		border: 1px solid #E6E6E6;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-family: Tahoma;
+		border-bottom: none!important;
+	}
+	&__num {
+		width: auto;
+	}
+	&__desc {
+		flex-grow: 2;
+		flex-basis: 0;
+		border-left: none!important;
+		border-right: none!important;
+	}
+	&__btns {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__btn {
+		display: block;
+		background-color: #ffffff;
+		border: none;
+		cursor: pointer;
+		&_edit {
+			background: url('/img/pencil-icon.png') no-repeat center center;
+			background-size: 100%; 
+			width: 23px;
+			height: 25px;
+			margin-right: 15px;
+		}
+		&_del {
+			background: url('/img/trashcan-icon.png') no-repeat center center;
+			background-size: 100%;
+			width: 20px;
+			height: 24px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.TaskItem {
+		flex-direction: column;
+		margin-bottom: 1.5rem;
+		border-bottom: 1px solid #E6E6E6;
+		&__desc {
+			border-left: 1px solid #E6E6E6!important;
+			border-right: 1px solid #E6E6E6!important;
+		}
+	}
+}

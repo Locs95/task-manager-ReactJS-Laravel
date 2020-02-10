@@ -1,0 +1,131 @@
+.TaskAdd {
+	&__align-right {
+		text-align: right;
+	}
+	&__btn {
+		border: 1px solid #39B54A;
+		padding: 0.8rem 2rem;
+		background: #ffffff;
+		border-radius: .30rem;
+		cursor: pointer;
+		font-family: Tahoma;
+		font-size: 1rem;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		&:hover {
+			background: #39B54A;
+			color: #ffffff;
+		}
+	}
+	&__show {
+		visibility: visible!important;
+	}
+	&__hide {
+		visibility: hidden!important;
+	}
+	&__d-block {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+	&__d-none {
+		display: none!important
+	}
+	&__modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255, 0.5);
+		z-index: 9999;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&-header {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: flex-end;
+		}
+		&-close {
+			display: block;
+			background: url('/img/close-icon.png') no-repeat center center;
+			background-size: 100%;
+			width: 20px;
+			height: 20px;
+		}
+		&__error-msg {
+			display: block;
+			margin-top: 0.5rem;
+			color: #FF0000;
+			font-family: Tahoma;
+			font-size: 0.9rem;
+		}
+	}
+	&__modal-content {
+		width: 45%;
+		min-height: 100px;
+		background: #ffffff;
+		box-shadow: 1px 1px 20px rgba(9,9,9,0.5);
+		border-radius: .30rem;
+		padding: 2rem 3rem;
+	}
+	&__modal-title {
+		margin-bottom: 0.8rem;
+	}
+	&__modal-formgroup {
+		margin-bottom: 0.5rem;
+	}
+	&__modal-title {
+		font-size: 1rem;
+		font-family: Tahoma;
+	}
+	&__modal-input {
+		width: 100%;
+		height: 3.5rem;
+		border-radius: .30rem;
+		background: #F2F2F2;
+		padding: 0.5rem 1.4rem;
+		border: none;
+		font-size: 1rem;
+		font-family: Tahoma;
+	}
+}
+
+@media (max-width: 1200px) {
+	.TaskAdd {
+		&__modal-content {
+			width: 60%;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.TaskAdd {
+		&__modal-content {
+			width: 70%;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.TaskAdd {
+		&__modal-content {
+			width: 90%;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.TaskAdd {
+		&__modal-content {
+			padding: 1.5rem 1.5rem;
+		}
+	}
+}

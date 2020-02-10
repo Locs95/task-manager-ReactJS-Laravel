@@ -1,0 +1,85 @@
+.TaskEdit {
+	width: 100%;
+	&__caption {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__btn {
+		border: 1px solid #dddddd;
+		padding: 0.8rem 2rem;
+		background: #ffffff;
+		border-radius: .30rem;
+		cursor: pointer;
+		font-family: Tahoma;
+		font-size: 1rem;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		text-decoration: none;
+		color: #000000;
+		&:hover {
+			background: #dddddd;
+			color: #ffffff;
+		}
+		&_del {
+			border: 1px solid #FF0000;
+			&:hover {
+				background: #FF0000;
+			}
+		}
+		&_back {
+			border: 1px solid #0071BC;
+			&:hover {
+				background: #0071BC;
+			}
+		}
+	}
+	&__title {
+		font-family: Tahoma;
+	}
+	&__align-center {
+		text-align: center;
+	}
+	&__form {
+		padding: 2rem 0;
+	}
+	&__formgroup {
+		margin-bottom: 2.5rem;
+		label {
+			display: block;
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			font-family: Tahoma;
+		}
+	}
+	&__input {
+		width: 100%;
+		height: 3.5rem;
+		border-radius: .30rem;
+		background: #F2F2F2;
+		padding: 0.5rem 1.4rem;
+		border: none;
+		font-size: 1rem;
+		font-family: Tahoma;
+	}
+}
+
+@media (max-width: 576px) {
+	.TaskEdit {
+		&__caption {
+			flex-direction: column;
+			&>div {
+				&:first-child {
+					margin-bottom: 1rem;
+				}
+				&:last-child {
+					margin-bottom: 0.4rem;
+				}
+			}
+		}
+	}
+}

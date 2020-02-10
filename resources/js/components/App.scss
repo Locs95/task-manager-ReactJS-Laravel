@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+button {
+	&:active, &:focus {
+		outline: none!important;
+		box-shadow: none!important;
+	}
+}
+input {
+	&:focus {
+		outline: none!important;
+	}
+}
+html, body {
+	min-height: 100vh;
+	background: #F2F2F2;
+}
+.App {
+	margin: 0 auto;
+	width: 70%;
+	background: #ffffff;
+	min-height: 100vh;
+	padding: 1rem;
+}
+@media (max-width: 1300px) {
+	.App {
+		width: 80%;
+	}
+}
+@media (max-width: 1200px) {
+	.App {
+		width: 90%;
+	}
+}
+@media (max-width: 767px) {
+	.App {
+		width: 100%;
+	}
+}
